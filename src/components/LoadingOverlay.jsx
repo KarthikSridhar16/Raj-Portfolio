@@ -10,11 +10,11 @@ const LoadingOverlay = ({ isVisible }) => {
 
     return (
         <div
-            className={`fixed top-0 left-0 w-full h-screen z-[9999] pointer-events-none flex flex-col justify-end pb-12 items-center transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+            className={`fixed top-0 left-0 w-full h-screen z-[9999] pointer-events-none flex flex-col justify-end pb-32 items-center transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
         >
             <div className="flex flex-col items-center gap-3">
                 <div className="w-px h-8 bg-stone-400"></div>
-                <div className="text-stone-700 font-sans text-xs tracking-[0.3em] uppercase font-medium">
+                <div className="text-stone-900 font-sans text-xs tracking-[0.3em] uppercase font-semibold">
                     Ingesting Data Stream
                 </div>
             </div>

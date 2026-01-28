@@ -20,7 +20,7 @@ const Experience = () => {
                         </div>
                         <div className="absolute left-4 md:left-1/2 -translate-x-[5px] w-2.5 h-2.5 rounded-full border border-stone-400 bg-stone-50 z-10 group-hover:bg-emerald-700 group-hover:border-emerald-700 transition-colors shadow-[0_0_0_4px_rgba(255,255,255,1)] gs-reveal"></div>
                         <div className="pl-12 md:pl-8 md:w-5/12 gs-reveal">
-                            <div className="text-stone-600 text-sm font-light leading-relaxed space-y-4 bg-stone-50/20 backdrop-blur-sm border border-stone-100/30 p-6 rounded-xl shadow-sm">
+                            <div className="text-stone-600 text-sm font-normal leading-relaxed space-y-4 bg-stone-50/20 backdrop-blur-sm border border-stone-100/30 p-6 rounded-xl shadow-sm">
                                 <p>Embedding innovative analytical models and ML solutions to increase analytics adoption by 20%+ and drive model-driven impact by 15–20%.</p>
                                 <p>Designing intuitive dashboards and formulating technical requirements to enhance stakeholder decision-making speed by 30%+.</p>
                             </div>
@@ -38,7 +38,7 @@ const Experience = () => {
                         </div>
                         <div className="absolute left-4 md:left-1/2 -translate-x-[5px] w-2.5 h-2.5 rounded-full border border-stone-400 bg-stone-50 z-10 group-hover:bg-emerald-700 group-hover:border-emerald-700 transition-colors shadow-[0_0_0_4px_rgba(255,255,255,1)] gs-reveal"></div>
                         <div className="pl-12 md:pr-8 md:w-5/12 md:text-right gs-reveal">
-                            <div className="text-stone-600 text-sm font-light leading-relaxed space-y-4 bg-stone-50/20 backdrop-blur-sm border border-stone-100/30 p-6 rounded-xl shadow-sm">
+                            <div className="text-stone-600 text-sm font-normal leading-relaxed space-y-4 bg-stone-50/20 backdrop-blur-sm border border-stone-100/30 p-6 rounded-xl shadow-sm">
                                 <p>Developed predictive algorithms for property prices, achieving 40% increase in customer experience.</p>
                                 <p>Built classification models to mitigate financial risks, resulting in a 25% revenue increase.</p>
                             </div>
@@ -56,7 +56,7 @@ const Experience = () => {
                         </div>
                         <div className="absolute left-4 md:left-1/2 -translate-x-[5px] w-2.5 h-2.5 rounded-full border border-stone-400 bg-stone-50 z-10 group-hover:bg-emerald-700 group-hover:border-emerald-700 transition-colors shadow-[0_0_0_4px_rgba(255,255,255,1)] gs-reveal"></div>
                         <div className="pl-12 md:pl-8 md:w-5/12 gs-reveal">
-                            <p className="text-stone-600 text-sm font-light leading-relaxed bg-stone-50/20 backdrop-blur-sm border border-stone-100/30 p-6 rounded-xl shadow-sm">
+                            <p className="text-stone-600 text-sm font-normal leading-relaxed bg-stone-50/20 backdrop-blur-sm border border-stone-100/30 p-6 rounded-xl shadow-sm">
                                 Streamlined reporting processes by creating automated visual dashboards using BI tools, significantly supporting data-driven strategy development.
                             </p>
                         </div>
@@ -73,7 +73,7 @@ const Experience = () => {
                         </div>
                         <div className="absolute left-4 md:left-1/2 -translate-x-[5px] w-2.5 h-2.5 rounded-full border border-stone-400 bg-stone-50 z-10 group-hover:bg-emerald-700 group-hover:border-emerald-700 transition-colors shadow-[0_0_0_4px_rgba(255,255,255,1)] gs-reveal"></div>
                         <div className="pl-12 md:pr-8 md:w-5/12 md:text-right gs-reveal">
-                            <p className="text-stone-600 text-sm font-light leading-relaxed bg-stone-50/20 backdrop-blur-sm border border-stone-100/30 p-6 rounded-xl shadow-sm">
+                            <p className="text-stone-600 text-sm font-normal leading-relaxed bg-stone-50/20 backdrop-blur-sm border border-stone-100/30 p-6 rounded-xl shadow-sm">
                                 Assisted in building and validating machine learning models while performing data cleaning and preprocessing to enhance model accuracy.
                             </p>
                         </div>

@@ -9,7 +9,7 @@ const Hero = () => {
                     <span className="text-xs uppercase tracking-widest text-stone-700 font-medium">Available for Hire</span>
                 </div>
 
-                <h1 className="text-6xl md:text-8xl serif font-medium text-stone-900 tracking-tighter leading-none mb-6 opacity-0 translate-y-8 animate-in">
+                <h1 className="text-7xl md:text-8xl serif font-medium text-stone-900 tracking-tighter leading-none mb-6 opacity-0 translate-y-8 animate-in">
                     Rajkumar M V
                 </h1>
 

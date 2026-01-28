@@ -228,7 +228,14 @@ const ThreeCanvas = ({ onLoadComplete }) => {
         tl.to(state, {
             morph: 1,
             duration: 2.5,
-            ease: "power2.inOut"
+            ease: "power2.inOut",
+            onStart: () => {
+                // Trigger loading text fade out as soon as morph starts
+                // We add a tiny delay to ensure smooth transition
+                setTimeout(() => {
+                    if (onLoadComplete) onLoadComplete();
+                }, 200);
+            }
         }, "morphing");
 
         // 3. Slow down spin speed
@@ -251,14 +258,6 @@ const ThreeCanvas = ({ onLoadComplete }) => {
         tl.to(wireMat, {
             opacity: 0.1,
             duration: 1.5
-        }, "-=1");
-
-        // 6. Notify parent that transition is complete (fade out loading UI)
-        tl.to({}, {
-            duration: 0.5,
-            onComplete: () => {
-                if (onLoadComplete) onLoadComplete();
-            }
         }, "-=1");
 
         // Handle Resize

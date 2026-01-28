@@ -21,9 +21,10 @@ function App() {
 
     // Trigger content animations after loading is done
     // We use a slight delay to ensure the loading overlay fade out is smooth
+    // Increased delay to 2000ms to wait for tornado morph to complete
     setTimeout(() => {
       initContentAnimations();
-    }, 100);
+    }, 2000);
   }, []);
 
   const initContentAnimations = () => {

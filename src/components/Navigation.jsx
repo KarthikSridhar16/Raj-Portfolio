@@ -16,6 +16,7 @@ const Navigation = () => {
                     <a href="#" className="serif text-xl tracking-tight font-medium pointer-events-auto text-stone-900">RMV.</a>
                     <div className="hidden md:flex gap-6 pointer-events-auto">
                         <a href="#about" className="text-sm font-light tracking-wide hover:text-stone-900 transition-colors">About</a>
+                        <a href="#skills" className="text-sm font-light tracking-wide hover:text-stone-900 transition-colors">Skills</a>
                         <a href="#experience" className="text-sm font-light tracking-wide hover:text-stone-900 transition-colors">Experience</a>
                         <a href="#projects" className="text-sm font-light tracking-wide hover:text-stone-900 transition-colors">Work</a>
                         <a href="#contact" className="text-sm font-light tracking-wide hover:text-stone-900 transition-colors">Contact</a>
@@ -30,6 +31,7 @@ const Navigation = () => {
             {/* Mobile Menu Overlay */}
             <div className={`md:hidden fixed inset-0 bg-[#f5f5f0] z-40 flex flex-col items-center justify-center space-y-8 ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'} transition-all duration-500 ease-in-out pointer-events-auto`}>
                 <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl serif font-medium text-stone-800 hover:text-stone-500 transition-colors">About</a>
+                <a href="#skills" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl serif font-medium text-stone-800 hover:text-stone-500 transition-colors">Skills</a>
                 <a href="#experience" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl serif font-medium text-stone-800 hover:text-stone-500 transition-colors">Experience</a>
                 <a href="#projects" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl serif font-medium text-stone-800 hover:text-stone-500 transition-colors">Work</a>
                 <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl serif font-medium text-stone-800 hover:text-stone-500 transition-colors">Contact</a>

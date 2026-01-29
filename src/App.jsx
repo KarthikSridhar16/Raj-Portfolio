@@ -78,8 +78,8 @@ function App() {
         <Navigation />
         <Hero />
         <About />
-        <Experience />
         <Skills />
+        <Experience />
         <Projects />
         <Footer />
       </div>

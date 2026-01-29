@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 
 const Projects = () => {
     return (
-        <section id="projects" className="py-24 px-6 md:px-12 bg-white/40 relative z-10">
+        <section id="projects" className="py-24 px-6 md:px-12 relative z-10">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gs-reveal">
                     <div>

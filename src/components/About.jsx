@@ -65,7 +65,7 @@ const About = () => {
                             <p className="text-xs tracking-widest uppercase text-stone-500 mt-1">Years Exp</p>
                         </div>
                         <div>
-                            <h3 className="text-4xl font-serif text-stone-900">25+</h3>
+                            <h3 className="text-4xl font-serif text-stone-900">5+</h3>
                             <p className="text-xs tracking-widest uppercase text-stone-500 mt-1">Projects</p>
                         </div>
                         <div>
@@ -77,41 +77,54 @@ const About = () => {
                     {/* Bento Grid */}
                     <div className="grid gap-6">
                         {/* Card 1: Advanced Analytics */}
-                        <div className="bg-stone-50/60 backdrop-blur-sm p-8 rounded-2xl border border-stone-200/50 shadow-sm hover:shadow-md transition-shadow gs-reveal">
-                            <div className="w-10 h-10 bg-stone-200/50 rounded-lg flex items-center justify-center mb-6 text-stone-700">
-                                <Icon icon="solar:graph-up-linear" className="text-2xl" />
-                            </div>
-                            <h3 className="text-xl font-serif text-stone-900 mb-3">Advanced Analytics & Strategy</h3>
-                            <p className="text-stone-600 text-sm leading-relaxed">
-                                Translating complex datasets into clear strategic directives. I build dashboards that don't just show data, but tell the story behind it.
-                            </p>
-                            <div className="absolute top-6 right-6 text-stone-400">
-                                <Icon icon="solar:arrow-right-up-linear" />
+                        {/* Card 1: Advanced Analytics */}
+                        <div className="bg-stone-900 text-stone-100 p-8 rounded-2xl border border-stone-800 shadow-xl gs-reveal relative overflow-hidden group">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-emerald-500/20 transition-colors"></div>
+
+                            <div className="relative z-10">
+                                <div className="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center mb-6 text-emerald-400">
+                                    <Icon icon="solar:graph-up-linear" className="text-2xl" />
+                                </div>
+                                <h3 className="text-xl font-serif text-white mb-3">Advanced Analytics & Strategy</h3>
+                                <p className="text-stone-400 text-sm leading-relaxed">
+                                    Translating complex datasets into clear strategic directives. I build dashboards that don't just show data, but tell the story behind it.
+                                </p>
+                                <div className="absolute top-6 right-6 text-stone-600 group-hover:text-stone-400 transition-colors">
+                                    <Icon icon="solar:arrow-right-up-linear" />
+                                </div>
                             </div>
                         </div>
 
                         {/* Row 2: ML & Data Eng */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {/* Card 2: ML */}
-                            <div className="bg-stone-50/60 backdrop-blur-sm p-8 rounded-2xl border border-stone-200/50 shadow-sm hover:shadow-md transition-shadow gs-reveal">
-                                <div className="w-10 h-10 bg-stone-200/50 rounded-lg flex items-center justify-center mb-6 text-stone-700">
-                                    <Icon icon="solar:magic-stick-3-linear" className="text-2xl" />
+                            {/* Card 2: ML */}
+                            <div className="bg-stone-900 text-stone-100 p-8 rounded-2xl border border-stone-800 shadow-xl gs-reveal relative overflow-hidden group">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-emerald-500/20 transition-colors"></div>
+                                <div className="relative z-10">
+                                    <div className="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center mb-6 text-emerald-400">
+                                        <Icon icon="solar:magic-stick-3-linear" className="text-2xl" />
+                                    </div>
+                                    <h3 className="text-lg font-serif text-white mb-2">Machine Learning</h3>
+                                    <p className="text-stone-400 text-xs leading-relaxed">
+                                        Deploying predictive models (XGBoost, LSTM) to anticipate market shifts.
+                                    </p>
                                 </div>
-                                <h3 className="text-lg font-serif text-stone-900 mb-2">Machine Learning</h3>
-                                <p className="text-stone-600 text-xs leading-relaxed">
-                                    Deploying predictive models (XGBoost, LSTM) to anticipate market shifts.
-                                </p>
                             </div>
 
                             {/* Card 3: Data Eng */}
-                            <div className="bg-stone-50/60 backdrop-blur-sm p-8 rounded-2xl border border-stone-200/50 shadow-sm hover:shadow-md transition-shadow gs-reveal">
-                                <div className="w-10 h-10 bg-stone-200/50 rounded-lg flex items-center justify-center mb-6 text-stone-700">
-                                    <Icon icon="solar:server-path-linear" className="text-2xl" />
+                            {/* Card 3: Data Eng */}
+                            <div className="bg-stone-900 text-stone-100 p-8 rounded-2xl border border-stone-800 shadow-xl gs-reveal relative overflow-hidden group">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-emerald-500/20 transition-colors"></div>
+                                <div className="relative z-10">
+                                    <div className="w-10 h-10 bg-stone-800 rounded-lg flex items-center justify-center mb-6 text-emerald-400">
+                                        <Icon icon="solar:server-path-linear" className="text-2xl" />
+                                    </div>
+                                    <h3 className="text-lg font-serif text-white mb-2">Data Engineering</h3>
+                                    <p className="text-stone-400 text-xs leading-relaxed">
+                                        Architecting robust pipelines using SQL, Airflow, and Cloud infrastructure.
+                                    </p>
                                 </div>
-                                <h3 className="text-lg font-serif text-stone-900 mb-2">Data Engineering</h3>
-                                <p className="text-stone-600 text-xs leading-relaxed">
-                                    Architecting robust pipelines using SQL, Airflow, and Cloud infrastructure.
-                                </p>
                             </div>
                         </div>
 

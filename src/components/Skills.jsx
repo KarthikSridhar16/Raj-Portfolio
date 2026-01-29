@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 
 const Skills = () => {
-    // Top Row Tools
+    // Top Row Tools (Marquee) - Kept as is per instructions to only change specified content
     const tools = [
         { name: 'PyTorch', icon: 'logos:pytorch-icon' },
         { name: 'TensorFlow', icon: 'logos:tensorflow' },
@@ -10,13 +10,22 @@ const Skills = () => {
         { name: 'NumPy', icon: 'logos:numpy' },
         { name: 'Python', icon: 'logos:python' },
         { name: 'AWS', icon: 'logos:aws' },
-        { name: 'Hadoop', icon: 'logos:hadoop' }
+        { name: 'Hadoop', icon: 'logos:hadoop' },
+        { name: 'Azure', icon: 'logos:microsoft-azure' },
+        { name: 'MLflow', icon: 'simple-icons:mlflow', color: '#0194E2' }
     ];
 
     // Engineering Infrastructure Tags
+    // Removed: Apache Spark, Airflow, PostgreSQL, Kubernetes
+    // Added: Databricks, Jupyter Notebook, Google Colab, Azure, Dataiku
     const infrastructure = [
-        "AWS Sagemaker", "Docker", "Kubernetes", "Apache Spark",
-        "Airflow", "PostgreSQL", "Git Actions", "Snowflake", "MLflow"
+        "AWS Sagemaker", "Docker", "Git Actions", "Snowflake", "MLflow",
+        "Databricks", "Jupyter Notebook", "Google Colab", "Azure", "Dataiku"
+    ];
+
+    // External Libraries (New Section)
+    const libraries = [
+        "NumPy", "Pandas", "Scikit-learn", "SciPy", "Matplotlib", "Seaborn"
     ];
 
     // Duplicate list for seamless looping
@@ -58,48 +67,93 @@ const Skills = () => {
                             <h3 className="text-2xl font-serif text-stone-800">Core Competencies</h3>
                         </div>
                         <div className="space-y-8">
+                            {/* Machine Learning */}
                             <div>
                                 <div className="flex justify-between mb-2">
-                                    <span className="font-medium text-stone-700">Predictive Modeling (XGBoost/LightGBM)</span>
+                                    <span className="font-medium text-stone-700">Machine Learning (ML)</span>
                                     <span className="text-xs text-stone-400 uppercase tracking-wider">Expert</span>
                                 </div>
                                 <div className="h-1.5 bg-stone-100 rounded-full overflow-hidden">
                                     <div className="h-full bg-stone-800 w-[95%]"></div>
                                 </div>
                             </div>
+
+                            {/* Python */}
                             <div>
                                 <div className="flex justify-between mb-2">
-                                    <span className="font-medium text-stone-700">NLP & LLMs (HuggingFace/OpenAI)</span>
-                                    <span className="text-xs text-stone-400 uppercase tracking-wider">Advanced</span>
+                                    <span className="font-medium text-stone-700">Python</span>
+                                    <span className="text-xs text-stone-400 uppercase tracking-wider">Expert</span>
                                 </div>
                                 <div className="h-1.5 bg-stone-100 rounded-full overflow-hidden">
-                                    <div className="h-full bg-stone-800 w-[85%]"></div>
+                                    <div className="h-full bg-stone-800 w-[98%]"></div>
                                 </div>
                             </div>
+
+                            {/* Advanced SQL */}
                             <div>
                                 <div className="flex justify-between mb-2">
-                                    <span className="font-medium text-stone-700">Data Visualization (Tableau/D3.js)</span>
+                                    <span className="font-medium text-stone-700">Advanced SQL</span>
                                     <span className="text-xs text-stone-400 uppercase tracking-wider">Advanced</span>
                                 </div>
                                 <div className="h-1.5 bg-stone-100 rounded-full overflow-hidden">
                                     <div className="h-full bg-stone-800 w-[90%]"></div>
                                 </div>
                             </div>
+
+                            {/* Predictive Analytics */}
+                            <div>
+                                <div className="flex justify-between mb-2">
+                                    <span className="font-medium text-stone-700">Predictive Analytics</span>
+                                    <span className="text-xs text-stone-400 uppercase tracking-wider">Expert</span>
+                                </div>
+                                <div className="h-1.5 bg-stone-100 rounded-full overflow-hidden">
+                                    <div className="h-full bg-stone-800 w-[92%]"></div>
+                                </div>
+                            </div>
+
+                            {/* Data Visualization */}
+                            <div>
+                                <div className="flex justify-between mb-2">
+                                    <span className="font-medium text-stone-700">Data Visualization (Tableau/Power BI)</span>
+                                    <span className="text-xs text-stone-400 uppercase tracking-wider">Advanced</span>
+                                </div>
+                                <div className="h-1.5 bg-stone-100 rounded-full overflow-hidden">
+                                    <div className="h-full bg-stone-800 w-[88%]"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Right: Engineering Infrastructure */}
-                    <div className="gs-reveal">
-                        <div className="flex items-center gap-3 mb-8">
-                            <Icon icon="solar:server-square-linear" className="text-2xl text-stone-400" />
-                            <h3 className="text-2xl font-serif text-stone-800">Engineering Infrastructure</h3>
+                    {/* Right: Infrastructure & Libraries */}
+                    <div className="gs-reveal space-y-12">
+                        {/* Engineering Infrastructure */}
+                        <div>
+                            <div className="flex items-center gap-3 mb-8">
+                                <Icon icon="solar:server-square-linear" className="text-2xl text-stone-400" />
+                                <h3 className="text-2xl font-serif text-stone-800">Engineering Infrastructure</h3>
+                            </div>
+                            <div className="flex flex-wrap gap-3">
+                                {infrastructure.map((tech, i) => (
+                                    <span key={i} className="px-5 py-2.5 border rounded-xl text-sm font-medium shadow-sm transition-all hover:scale-105 duration-300 bg-stone-900 border-stone-800 text-emerald-400 hover:bg-stone-800">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
-                        <div className="flex flex-wrap gap-3">
-                            {infrastructure.map((tech, i) => (
-                                <span key={i} className="px-5 py-2.5 bg-white border border-stone-200 rounded-xl text-stone-600 text-sm font-medium shadow-sm hover:border-stone-300 transition-colors">
-                                    {tech}
-                                </span>
-                            ))}
+
+                        {/* External Libraries (New Section) */}
+                        <div>
+                            <div className="flex items-center gap-3 mb-8">
+                                <Icon icon="solar:library-linear" className="text-2xl text-stone-400" />
+                                <h3 className="text-2xl font-serif text-stone-800">External Libraries</h3>
+                            </div>
+                            <div className="flex flex-wrap gap-3">
+                                {libraries.map((lib, i) => (
+                                    <span key={i} className="px-5 py-2.5 border rounded-xl text-sm font-medium shadow-sm transition-all hover:scale-105 duration-300 bg-stone-900 border-stone-800 text-emerald-400 hover:bg-stone-800">
+                                        {lib}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
 

@@ -84,7 +84,7 @@ const Experience = () => {
                                 ) : (
                                     /* Odd Index: Description on Left */
                                     <div>
-                                        <ul className="list-disc ml-5 text-justify text-stone-600 text-base md:text-lg font-light leading-relaxed space-y-4">
+                                        <ul className="list-disc ml-5 text-left text-stone-600 text-base md:text-lg font-light leading-relaxed space-y-4">
                                             {exp.description.map((item, i) => (
                                                 <li key={i}>{item}</li>
                                             ))}
@@ -98,7 +98,7 @@ const Experience = () => {
                                 {index % 2 === 0 ? (
                                     /* Even Index: Description on Right */
                                     <div>
-                                        <ul className="list-disc ml-5 text-justify text-stone-600 text-base md:text-lg font-light leading-relaxed space-y-4">
+                                        <ul className="list-disc ml-5 text-left text-stone-600 text-base md:text-lg font-light leading-relaxed space-y-4">
                                             {exp.description.map((item, i) => (
                                                 <li key={i}>{item}</li>
                                             ))}

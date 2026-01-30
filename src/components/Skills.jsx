@@ -28,6 +28,15 @@ const Skills = () => {
         "NumPy", "Pandas", "Scikit-learn", "SciPy", "Matplotlib", "Seaborn"
     ];
 
+    // Industry Exposure
+    const industries = [
+        { name: "CPG", icon: "carbon:product" },
+        { name: "Retail", icon: "solar:shop-linear" },
+        { name: "Pharma", icon: "solar:medical-kit-linear" },
+        { name: "Real Estate", icon: "solar:buildings-linear" },
+        { name: "Renewable Energy", icon: "solar:leaf-linear" },
+    ];
+
     // Duplicate list for seamless looping
     const marqueeItems = [...tools, ...tools, ...tools, ...tools];
 
@@ -122,6 +131,8 @@ const Skills = () => {
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
 
                     {/* Right: Infrastructure & Libraries */}
@@ -158,8 +169,27 @@ const Skills = () => {
                     </div>
 
                 </div>
+
+                {/* Industry Exposure - Full Width Horizontal */}
+                <div className="mt-24 gs-reveal">
+                    <div className="text-center mb-12">
+                        <h3 className="text-3xl font-serif text-stone-800 mb-4">Industry Exposure</h3>
+                        <div className="h-1 w-20 bg-emerald-500 mx-auto rounded-full opacity-50"></div>
+                    </div>
+
+                    <div className="flex flex-wrap justify-center gap-6">
+                        {industries.map((ind, i) => (
+                            <div key={i} className="flex flex-col items-center justify-center p-6 bg-stone-900 border border-stone-800 rounded-2xl shadow-sm hover:shadow-lg hover:shadow-emerald-900/20 hover:-translate-y-1 transition-all duration-300 min-w-[160px] group cursor-default">
+                                <div className="w-14 h-14 flex items-center justify-center bg-stone-800 rounded-full mb-4 group-hover:bg-emerald-900/30 transition-colors">
+                                    <Icon icon={ind.icon} width="28" height="28" className="text-emerald-400 group-hover:text-emerald-300 transition-colors" />
+                                </div>
+                                <span className="text-stone-300 font-medium text-sm group-hover:text-emerald-400 transition-colors">{ind.name}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
-        </section>
+        </section >
     );
 };
 

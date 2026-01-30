@@ -8,28 +8,41 @@ const Experience = () => {
             location: "Bengaluru",
             role: "Data Scientist II",
             period: "Jan 2025 – Present",
-            description: "Embedding innovative analytical models and ML solutions to increase analytics adoption by 20%+ and drive model-driven impact by 15–20%.",
+            description: [
+                "Collaborated with application and engineering teams to deploy production-ready analytical models, increasing analytics adoption by 20%+.",
+                "Translated business problems into statistical and ML solutions using Python and SQL, improving decision effectiveness by 10%+.",
+                "Built and optimized ML models (regression, ensemble techniques) to drive measurable business impact of 15–20%.",
+                "Communicated insights, assumptions, and recommendations to cross-functional and senior stakeholders to support data-driven decisions."
+            ],
         },
         {
             company: "GJ Square Solutions",
             location: "Remote",
             role: "Data Scientist II",
             period: "Mar 2024 – Dec 2024",
-            description: "Developed predictive algorithms for property prices, achieving 40% increase in customer experience. Built classification models to mitigate financial risks.",
+            description: [
+                "Designing dashboards and reports using BI tools to translate descriptive, inferential, and predictive insights into business stories, improving stakeholder understanding and decision speed by 30%+.",
+                "Developed and deployed predictive algorithms to predict property prices for customers with limited financial means, achieving 40% increase in customer experience.",
+                "Built classification models and developed innovative solutions to mitigate financial and credit risks, resulting in a substantial 25% revenue increase."
+            ],
         },
         {
             company: "Arcadia",
             location: "Chennai",
             role: "Data Analyst",
             period: "Oct 2022 – Mar 2024",
-            description: "Streamlined reporting processes by creating automated visual dashboards using BI tools, significantly supporting data-driven strategy development.",
+            description: [
+                "Streamlined reporting processes by creating automated visual dashboards using BI tools, significantly supporting data-driven strategy development."
+            ],
         },
         {
             company: "Elixir Infotech",
             location: "Remote",
             role: "Data Science Intern",
             period: "Feb 2022 – Oct 2022",
-            description: "Assisted in building and validating machine learning models while performing data cleaning and preprocessing to enhance model accuracy.",
+            description: [
+                "Assisted in building and validating machine learning models while performing data cleaning and preprocessing to enhance model accuracy."
+            ],
         }
     ];
 
@@ -71,9 +84,11 @@ const Experience = () => {
                                 ) : (
                                     /* Odd Index: Description on Left */
                                     <div>
-                                        <p className="text-stone-600 text-base md:text-lg font-light leading-relaxed">
-                                            {exp.description}
-                                        </p>
+                                        <ul className="list-disc ml-5 text-justify text-stone-600 text-base md:text-lg font-light leading-relaxed space-y-4">
+                                            {exp.description.map((item, i) => (
+                                                <li key={i}>{item}</li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 )}
                             </div>
@@ -83,9 +98,11 @@ const Experience = () => {
                                 {index % 2 === 0 ? (
                                     /* Even Index: Description on Right */
                                     <div>
-                                        <p className="text-stone-600 text-base md:text-lg font-light leading-relaxed">
-                                            {exp.description}
-                                        </p>
+                                        <ul className="list-disc ml-5 text-justify text-stone-600 text-base md:text-lg font-light leading-relaxed space-y-4">
+                                            {exp.description.map((item, i) => (
+                                                <li key={i}>{item}</li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 ) : (
                                     /* Odd Index: Company Info on Right */
